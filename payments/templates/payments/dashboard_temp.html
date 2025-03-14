@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fee Management System</title>
+    <link rel="icon" href="{% static 'image/favicon.ico' %}" type="png">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
@@ -210,7 +213,7 @@
         </div>
         
         <div class="nav-links">
-            <a href="{%url 'exammantra:mainpage'%}">Home</a>
+            <a href="{%url 'exammantra:index'%}">Home</a>
             <a class="nav-link dropdown-toggle" href="#" role="button" 
                    data-bs-toggle="dropdown">
                     <i class="bi bi-person-circle"></i> {{ user.username }}

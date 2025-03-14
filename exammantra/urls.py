@@ -6,7 +6,7 @@ from exammantra import views
 app_name = 'exammantra'
 urlpatterns = [
     
-    path('',views.main_page, name="mainpage"),
+    path('',views.main_page, name="index"),
     path('notes/', views.notes_list, name='notes_list'),
    
 ]

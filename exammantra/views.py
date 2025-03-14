@@ -10,7 +10,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
 def main_page(request):
-    return render(request,'login/mainpage.html')
+    return render(request,'login/index.html')
 
 
 
